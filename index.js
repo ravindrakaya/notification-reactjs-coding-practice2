@@ -1,36 +1,38 @@
 const Notification = (props) => {
   //  Write your code here.
   const {imgUrl,imgCls,msgCardCls,msgContent} = props.source;
-  return 
-      <div className={`card-container ${msgCardCls}`}>
+  return (
+    <div className={`card-container ${msgCardCls}`}>
           <img src={imgUrl} className={imgCls}/>
           <p>{msgContent}</p>
       </div>
+  );
+      
   
 };
 
 const sourcePrimary = {
     imgUrl: "https://assets.ccbp.in/frontend/react-js/primary-icon-img.png",
     imgCls: "image",
-    msgCardCls: "msg-card-primary"
+    msgCardCls: "msg-card-primary",
     msgContent: "Information Message"
 };
 const sourceSuccess = {
     imgUrl: "https://assets.ccbp.in/frontend/react-js/success-icon-img.png",
     imgCls: "image",
-    msgCardCls: "msg-card-success"
+    msgCardCls: "msg-card-success",
     msgContent: "Success Message"
 };
 const sourceWarning = {
     imgUrl: "https://assets.ccbp.in/frontend/react-js/warning-icon-img.png",
     imgCls: "image",
-    msgCardCls: "msg-card-warning"
+    msgCardCls: "msg-card-warning",
     msgContent: "Warning Message"
 };
 const sourceError = {
     imgUrl: "https://assets.ccbp.in/frontend/react-js/danger-icon-img.png",
     imgCls: "image",
-    msgCardCls: "msg-card-error"
+    msgCardCls: "msg-card-error",
     msgContent: "Error Message"
 };
 
